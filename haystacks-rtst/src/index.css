@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/Inter.ttf) format('truetype');
+}
+
+* {
+    font-family: var(--font-family-brand), sans-serif;
+    font-style: normal;
+    color: var(--font-color-brand);
+    line-height: 129%;
+    letter-spacing: .02em;
+}
+
+body,
+html,
+div {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+
+    width: 100%;
+    background-color: var(--bg-brand-dark);
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-brand), sans-serif;
+    font-style: normal;
+    color: var(--font-color-brand);
+    font-weight: 500;
+    line-height: 129%;
+    letter-spacing: .02em;
+}
+
+p {
+    font-family: Inter;
+    font-size: 12px;
+}
+
+
+
+
+.page-wrapper {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.page-content {
+    position: relative;
+    padding: 2em;
+    margin: 0px;
+}
+
+.splash-wrapper {
+    position: relative;
+}
+
+.content-section {
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-section.content-top {
+    margin-top: 0px;
+}
+
+.section-sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.content-subsection {
+    position: relative;
+    margin-top: 50px;
+}
+
+.subsection-scroll-copy {
+    margin-top: 200px;
+    padding-left: 30%;
+}
+
+/* .content-subsection-scroll {} */
+
+.content-section-break {
+    /* border-top: .5px solid white; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 100px;
+    max-width: 70%;
+    margin-left: 0px;
+}
+
+.content-copy-feature {
+    display: block;
+    font-size: 20px;
+    font-family: "aktiv-grotesk-thin";
+}
+
+.header-basic {
+    min-height: 125px;
+}
+
+.btn-clean {
+
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: none;
+    border: solid .75px var(--font-color-brand);
+    border-radius: 1.5rem;
+
+    font-size: 10px;
+    font-weight: 400;
+    font-family: Inter;
+    color: var(--font-color-brand);
+}
+
+.img-bg-geometry {
+    width: 100%;
+    position: absolute;
+}
+
+.img-parallax {
+    width: 100%;
+    /* height: 100%; */
+    /* position: sticky;
+    top: 0;
+    z-index: -1; */
+}
+
+#btn-request-demo {
+    margin-top: 5em;
+}
