@@ -15,51 +15,55 @@ const People = () => {
 
     return (
         <div className="page-wrapper">
+            <NavHeader />
             <div className="page-content">
-                <NavHeader />
 
-                <h1>We are a team of lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet placerat mi. sollicitudin feugiat laoreet.</h1>
+                <h2>We are a team of lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet placerat mi. sollicitudin feugiat laoreet.</h2>
 
                 <div>
-
-
-
                     <div>
-                        <h1>Founding Team</h1>
-                        <div className="headshot-section-container">
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
+
+                    </div>
+                    <div>
+                        <div>
+                            <h1>Founding Team</h1>
+                            <div className="headshot-section-container">
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h1>Leadership Team</h1>
+                            <div className="headshot-section-container">
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h1>Advisory Board</h1>
+                            <div className="headshot-section-container">
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                                <HeadshotPlaceholder />
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <h1>Leadership Team</h1>
-                        <div className="headshot-section-container">
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                        </div>
-                    </div>
 
-                    <div>
-                        <h1>Advisory Board</h1>
-                        <div className="headshot-section-container">
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                            <HeadshotPlaceholder />
-                        </div>
-                    </div>
 
                 </div>
 

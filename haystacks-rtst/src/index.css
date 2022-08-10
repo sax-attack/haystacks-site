@@ -43,14 +43,19 @@ p {
 }
 
 
-nav#nav-header {
-    float: right;
+#nav-header {
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    /* margin-left: auto; */
 }
 
 a.nav-header-link {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     text-decoration: none;
+    margin-left: 20px;
 
 }
 
@@ -62,7 +67,7 @@ a.nav-header-link {
 
 .page-content {
     position: relative;
-    padding: 2rem;
+    padding: clamp(30px, 100px, 300px);
     margin: 0px;
 }
 
