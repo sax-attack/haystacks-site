@@ -41,14 +41,21 @@ const Splash = () => {
 
                 <Common.ContentBreak />
 
-                <div className="content-section section-sticky">
-                    <h2> OUR SOLUTIONS </h2>
+                <div className="content-section">
+                    <div className="sticky">
+                        <h2 className=""> OUR SOLUTIONS </h2>
+                        <br />
                     <img className="img-parallax" src={ExplorationLogo} alt='Haystacks imagery' />
-                    <div className="content-subsection">
+
+                    </div>
+                    <div className="content-scroll-container">
+
+
+                    </div>
 
 
 
-                        <div className="content-subsection-scroll">
+                    <div className="content-scroll-item">
                             <h1>Market<br />[Insider]</h1>
                             <div className="subsection-scroll-copy">
                                 <p>Which micro-markets meet your investment criteria? </p>
@@ -75,7 +82,7 @@ const Splash = () => {
 
 
 
-                    </div>
+
                 </div>
 
             </div>

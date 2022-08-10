@@ -16,10 +16,8 @@ const SpaRouter = () => {
                 <Route path="/">
                     <Route index element={<Splash />} />
                     <Route path="home" element={<Home />} />
-                    <Route path="solutions">
-                        <Route path="market" element={<MarketSolutions />} />
-                        <Route path="sfr" element={<SolutionsSFR />} />
-                    </Route>
+                    <Route path="market" element={<MarketSolutions />} />
+                    <Route path="portfolio" element={<SolutionsSFR />} />
                     <Route path="people" element={<People />} />
                     <Route path="published" element={<Published />} />
                 </Route>
