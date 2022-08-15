@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SpaRouter from './spaRouter';
+import { Router } from './router';
 
 import './index.css';
-import './brand_style.css'
-
+import './brand_style.css';
 
 // React application root
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SpaRouter />
-
+    <Router />
   </React.StrictMode>
 );
 
