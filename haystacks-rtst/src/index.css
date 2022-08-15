@@ -1,164 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-    font-family: Inter;
-    src: url(./assets/Inter.ttf) format('truetype');
+  font-family: Inter;
+  src: url(./assets/Inter.ttf) format('truetype');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 /* Changes to elements */
 * {
-    font-family: var(--font-family-brand), sans-serif;
-    font-style: normal;
-    color: var(--font-color-brand);
-    line-height: 129%;
-    letter-spacing: .02em;
+  font-family: var(--font-family-brand), sans-serif;
+  font-style: normal;
+  color: var(--font-color-brand);
+  line-height: 129%;
+  letter-spacing: 0.02em;
 }
 
 body,
 html,
 div {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
+  width: 100%;
+  background-color: var(--bg-brand-dark);
+}
 
-    width: 100%;
-    background-color: var(--bg-brand-dark);
-
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--font-family-brand), sans-serif;
-    font-style: normal;
-    color: var(--font-color-brand);
-    font-weight: 500;
-    line-height: 129%;
-    letter-spacing: .02em;
+  font-family: var(--font-family-brand), sans-serif;
+  font-style: normal;
+  color: var(--font-color-brand);
+  font-weight: 500;
+  line-height: 129%;
+  letter-spacing: 0.02em;
 }
 
 p {
-    font-family: Inter;
-    font-size: 12px;
-}
-
-
-#nav-header {
-    display: flex;
-    justify-content: right;
-    margin-top: 25px;
-    margin-right: 25px;
-    /* margin-left: auto; */
-}
-
-a.nav-header-link {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    margin-left: 20px;
-
+  font-family: Inter;
+  font-size: 12px;
 }
 
 .page-wrapper {
-    padding: 0px;
-    margin: 0px;
-    position: relative;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
 }
 
 .page-content {
-    position: relative;
-    padding: clamp(30px, 100px, 300px);
-    margin: 0px;
+  position: relative;
+  padding: clamp(30px, 100px, 300px);
+  margin: 0px;
 }
 
 .headshot-section-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
+  display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
 .headshot-item-container {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 .content-section {
-    position: relative;
-    width: 100%;
-    margin-top: 50px;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .content-section.content-top {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .sticky {
-    position: sticky;
-    top: 10px;
-        /* bottom: 10px; */
+  position: sticky;
+  top: 10px;
+  /* bottom: 10px; */
 }
 
 .content-subsection {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 }
 
 .subsection-scroll-copy {
-    margin-top: 200px;
-    padding-left: 30%;
+  margin-top: 200px;
+  padding-left: 30%;
 }
 
 .content-scroll-container {
-    position: relative;
+  position: relative;
 }
 
 .content-section-break {
-    /* border-top: .5px solid white; */
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    margin-top: 70px;
+  /* border-top: .5px solid white; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top: 70px;
 }
 
 .content-copy-feature {
-    display: block;
-    font-size: 20px;
-    font-family: "aktiv-grotesk-thin";
+  display: block;
+  font-size: 20px;
+  font-family: 'aktiv-grotesk-thin';
 }
 
 .header-basic {
-    min-height: 75px;
+  min-height: 75px;
 }
 
 .btn-clean {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: none;
+  border: solid 0.75px var(--font-color-brand);
+  border-radius: 1.5rem;
 
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background: none;
-    border: solid .75px var(--font-color-brand);
-    border-radius: 1.5rem;
-
-    font-size: 10px;
-    font-weight: 400;
-    font-family: Inter;
-    color: var(--font-color-brand);
+  font-size: 10px;
+  font-weight: 400;
+  font-family: Inter;
+  color: var(--font-color-brand);
 }
 
 .img-bg-geometry {
-    width: 100%;
-    position: absolute;
+  width: 100%;
+  position: absolute;
 }
 
 .img-parallax {
-    width: 100%;
-    position: absolute;
-    /* height: 100%; */
-    /* position: sticky;
+  width: 100%;
+  position: absolute;
+  /* height: 100%; */
+  /* position: sticky;
     top: 0;
     z-index: -1; */
 }
 
 #btn-request-demo {
-    margin-top: 5em;
+  margin-top: 5em;
 }
