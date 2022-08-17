@@ -4,7 +4,7 @@ import { HomeTopSection } from './top-section';
 import { NumbersSection } from './numbers-section';
 import { CardsSection } from './cards-section';
 import { Solutions } from './solutions'
-import { BigText } from '../../common';
+import { BigText, RequestForm } from '../../common';
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +20,7 @@ const Home = () => {
       <Solutions />
       <CardsSection />
       <NumbersSection />
+      <RequestForm />
     </Fragment>
   );
 };
