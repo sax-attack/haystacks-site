@@ -2,6 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
+    extend: {
+      fontFamily: {
+        "inter": ["Inter", "sans-serif"],
+      },
+    },
     colors: {
       accent: '#49FF80',
       background: {

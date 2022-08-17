@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: Inter;
-  src: url(./assets/Inter.ttf) format('truetype');
-}
-
 *,
 *:before,
 *:after {
@@ -20,6 +15,10 @@
   color: var(--font-color-brand);
   line-height: 129%;
   letter-spacing: 0.02em;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
 }
 
 body,
@@ -52,7 +51,6 @@ h3 {
 }
 
 p {
-  font-family: Inter;
   font-size: 12px;
 }
 
@@ -142,7 +140,6 @@ p {
 
   font-size: 10px;
   font-weight: 400;
-  font-family: Inter;
   color: var(--font-color-brand);
 }
 
