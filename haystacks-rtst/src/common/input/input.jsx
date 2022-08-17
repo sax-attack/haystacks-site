@@ -14,7 +14,7 @@ const Input = ({
         {...rest}
         placeholder={placeholder}
         className={classNames([
-          "w-full py-5 bg-transparent appearance-none border-0 outline-0 border-b border-gray-200	",
+          "input-bg w-full py-5 appearance-none border-0 outline-0 border-b border-gray-200",
           !!error && "input_invalid",
         ])}
       />

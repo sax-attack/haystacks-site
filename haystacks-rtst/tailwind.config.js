@@ -15,6 +15,7 @@ module.exports = {
         card: '#FFFFFF08',
         burgerMenu: '#161616',
         solutions: '#161616',
+        input: 'red'
       },
       border: {
         light: '#FFFFFF',
