@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 
 import { ScrollStage } from './components/scroll-stage'
-import CubeIcon from '../../../assets/cube-icon.svg';
+import CubeIcon from '../../../assets/cube-icon.svg'
+import ArrowDownIcon from '../../../assets/arrow-down.svg'
+import c from 'classnames'
 
 const data = [
   {
@@ -21,45 +23,80 @@ const data = [
   },
 ]
 
+export const Solutions = () => {
+  const [slide, setSlide] = useState(0)
+  const stageRef = useRef(new ScrollStage())
 
-export const Solutions = () =>    
-  {
-    const stageRef = useRef(new ScrollStage())
+  useEffect(() => {
+    const stage = stageRef.current
 
-    useEffect(() => {
-      const stage = stageRef.current;
+    stage.mount()
 
-      stage.mount()
+    return () => {
+      stage.unmount()
+    }
+  }, [])
 
-      return () => {
-        stage.unmount()
-      }
-    }, []);
-    
+  const nextSlide = () => {
+    const next = slide + 1
+
+    setSlide(next)
+    stageRef.current.updateScrollAnimations(next / 2)
+  }
+
+  const previousSlide = () => {
+    const previous = slide - 1
+
+    setSlide(previous)
+    stageRef.current.updateScrollAnimations(previous / 2)
+  }
+
+  const renderSlide = () => {
+    const content = data[slide]
+    const previousDisabled = slide === 0
+    const nextDisabled = slide === 2
 
     return (
-      <div className="content bg-background-solutions">
-      <div className="scroll__stage w-full pointer-events-none">
-        <div className="scroll__content w-full will-change-transform">
-          {data.map(content => (
-            <section className="section flex flex-col justify-between min-h-screen px-7 pb-20 pt-10">
-              <div>
-                <div className="flex flex-col items-center">
-                  <img className="w-7" src={CubeIcon} alt="SolutionsLogo" />
-                  <p className="text-sm md:text-2xl">Solutions</p>
-                </div>
-                <div className="flex flex-col items-center md:items-start pt-8">
-                  <p className="text-4xl md:text-7xl w-2/5">{content.heading}</p>
-                  {content.subheading && <p className="text-xl md:text-5xl">{content.subheading}</p>}
-                </div>
-              </div>
-              <div className="flex justify-center md:justify-end text-center md:text-left">
-                <p className="text-xs md:text-2xl md:w-2/5">{content.text}</p>
-              </div>
-            </section>
-          ))}
+      <section className="section flex flex-col justify-between min-h-screen px-7 pb-20 pt-10">
+        <div>
+          <div className="flex flex-col items-center">
+            <img className="w-7" src={CubeIcon} alt="SolutionsLogo" />
+            <p className="text-sm md:text-2xl">Solutions</p>
+          </div>
+          <div className="flex flex-col items-center md:items-start pt-8 text-center md:text-left">
+            <p className="text-5xl md:text-7xl leading-10 w-2/5">{content.heading}</p>
+            {content.subheading && <p className="text-xl md:text-5xl md:w-2/5">{content.subheading}</p>}
+          </div>
         </div>
-      </div>
-    </div>
+        <div className="flex justify-center items-center md:justify-between text-center md:text-left">
+          <div className="flex flex-col cursor-pointer mr-5">
+            <button onClick={previousSlide} disabled={previousDisabled}>
+              <img
+                className={c('rotate-180 mb-5 w-10', previousDisabled && 'opacity-50')}
+                src={ArrowDownIcon}
+                alt="Arrow down"
+              />
+            </button>
+            <button onClick={nextSlide} disabled={nextDisabled}>
+              <img
+                className={c('w-10', nextDisabled && 'opacity-50')}
+                src={ArrowDownIcon}
+                alt="Arrow down"
+                onClick={nextSlide}
+              />
+            </button>
+          </div>
+          <p className="text-xs md:text-2xl w-2/5">{content.text}</p>
+        </div>
+      </section>
     )
   }
+
+  return (
+    <div className="content relative bg-background-solutions">
+      <div className="scroll__stage container">
+        <div className="scroll__content w-full will-change-transform">{renderSlide()}</div>
+      </div>
+    </div>
+  )
+}
