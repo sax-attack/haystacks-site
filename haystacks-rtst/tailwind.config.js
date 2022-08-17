@@ -8,6 +8,7 @@ module.exports = {
         gray: '#606060',
         card: '#FFFFFF08',
         burgerMenu: '#161616',
+        solutions: '#161616',
       },
       border: {
         light: '#FFFFFF',
