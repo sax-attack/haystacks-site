@@ -122,7 +122,7 @@ export class ScrollStage {
    */
   addCanvas() {
     this.canvas.classList.add('webgl')
-    document.body.appendChild(this.canvas)
+    this.element.appendChild(this.canvas)
   }
 
   addCamera() {
