@@ -11,6 +11,7 @@ module.exports = {
       accent: '#49FF80',
       background: {
         gray: '#606060',
+        accent: '#202326',
         card: '#FFFFFF08',
         burgerMenu: '#161616',
         solutions: '#161616',

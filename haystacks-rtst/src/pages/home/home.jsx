@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { routes } from '../../router';
 import { HomeTopSection } from './top-section';
 import { NumbersSection } from './numbers-section';
@@ -12,11 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        background: 'linear-gradient(180deg, rgba(96, 96, 96, 0.2) 0%, rgba(96, 96, 96, 0.2) 50.38%, rgba(96, 96, 96, 0) 100%)',
-      }}
-    >
+    <Fragment>
       <HomeTopSection />
       <BigText>
         Our AI and Machine Learning enables real estate investors to underwrite and optimize investments strategies in real-time.
@@ -24,7 +20,7 @@ const Home = () => {
       <Solutions />
       <CardsSection />
       <NumbersSection />
-    </div>
+    </Fragment>
   );
 };
 

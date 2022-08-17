@@ -1,0 +1,8 @@
+.input {
+  width: 100%;
+}
+
+.input__error {
+  letter-spacing: 0.3px;
+  position: absolute;
+}
