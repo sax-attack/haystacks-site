@@ -63,7 +63,7 @@ export const Solutions = () => {
             <img className="w-7" src={CubeIcon} alt="SolutionsLogo" />
             <p className="text-sm md:text-2xl">Solutions</p>
           </div>
-          <div className="flex flex-col items-center md:items-start pt-8 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start pt-8 md:pt-20 text-center md:text-left">
             <p className="text-5xl md:text-7xl leading-10 w-2/5">{content.heading}</p>
             {content.subheading && <p className="text-xl md:text-5xl md:w-2/5">{content.subheading}</p>}
           </div>
