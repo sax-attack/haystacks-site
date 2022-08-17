@@ -108,6 +108,7 @@ export class ScrollStage {
     this.addMesh()
     this.addEventListeners()
     this.onResize()
+      // this.renderer.setSize(window.innerWidth, window.innerHeight)
     this.update()
   }
 
@@ -155,14 +156,17 @@ export class ScrollStage {
     this.mesh = new THREE.Mesh(this.geometry, this.material)
 
     this.scene.add(this.mesh)
+
+    this.updateScrollAnimations(0)
   }
 
   /**
    * SCROLL BASED ANIMATIONS
    */
-  updateScrollAnimations() {
+  updateScrollAnimations(phase) {
     this.scroll.running = false
-    this.scroll.normalized = (this.scroll.hard / this.scroll.limit).toFixed(1)
+    // this.scroll.normalized = (this.scroll.hard / this.scroll.limit).toFixed(1)
+    this.scroll.normalized = 1
 
     GSAP.to(this.mesh.rotation, {
       x: this.scroll.normalized * Math.PI,
@@ -179,7 +183,7 @@ export class ScrollStage {
       if (this.settings[key].start !== this.settings[key].end) {
         GSAP.to(this.mesh.material.uniforms[key], {
           value:
-            this.settings[key].start + this.scroll.normalized * (this.settings[key].end - this.settings[key].start),
+            this.settings[key].start + phase * (this.settings[key].end - this.settings[key].start),
         })
       }
     }
@@ -193,7 +197,7 @@ export class ScrollStage {
 
     // window.addEventListener('mousemove', this.onMouseMove.bind(this))  // enable for soundcheck (→ console)
 
-    window.addEventListener('scroll', this.onScroll.bind(this))
+    // window.addEventListener('scroll', this.onScroll.bind(this))
 
     window.addEventListener('resize', this.onResize.bind(this))
   }
@@ -249,6 +253,8 @@ export class ScrollStage {
 
     this.renderer.setSize(this.viewport.width, this.viewport.height)
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5))
+
+    // this.canvas.style.width =`${window.innerWidth}px`
   }
 
   /**
@@ -262,6 +268,8 @@ export class ScrollStage {
 
     this.render()
 
+    // this.updateScrollAnimations()
+
     window.requestAnimationFrame(this.update)
   }
 
@@ -269,6 +277,7 @@ export class ScrollStage {
    * RENDER
    */
   render() {
+    // this.updateScrollAnimations()
     this.renderer.render(this.scene, this.camera)
   }
 }
