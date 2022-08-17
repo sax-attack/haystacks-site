@@ -82,7 +82,6 @@ export const Solutions = () => {
                 className={c('w-10', nextDisabled && 'opacity-50')}
                 src={ArrowDownIcon}
                 alt="Arrow down"
-                onClick={nextSlide}
               />
             </button>
           </div>
