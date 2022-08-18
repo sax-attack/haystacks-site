@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a456134.css",
+    "main.js": "/static/js/main.3e923572.js",
+    "static/media/cube-icon.svg": "/static/media/cube-icon.e51b1114ef913defc7a44d1c1dacb2ec.svg",
+    "static/media/Sourav.png": "/static/media/Sourav.a7308e81460ef0646ecd.png",
+    "static/media/home-geometry.svg": "/static/media/home-geometry.b134bc49fd99966bae48e138697c72eb.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.95e68bfc002f2ad5580890856e3aaff3.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.f2e7db95a7cde2eaec68837a3b539c38.svg",
+    "main.7a456134.css.map": "/static/css/main.7a456134.css.map",
+    "main.3e923572.js.map": "/static/js/main.3e923572.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a456134.css",
+    "static/js/main.3e923572.js"
+  ]
+}

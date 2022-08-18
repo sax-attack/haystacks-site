@@ -1,9 +1,0 @@
-canvas.webgl {
-  top: 0;
-  left: 0;
-  height: 100vh;
-  position: absolute;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  opacity: 0.5;
-}
