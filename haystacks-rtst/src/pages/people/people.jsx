@@ -12,11 +12,12 @@ const People = () => {
     <div>
       <section className="container">
         <div className="px-24">
-        <h2 className="text-left py-40 text-3xl max-w-4xl">
-          Haystacks is led by a team of real estate professionals and 
-          technologists determined to unlock value for professional residential investors.
-        </h2>
+          <h2 className="text-left py-40 text-3xl max-w-4xl font-rubik">
+            Haystacks is led by a team of real estate professionals and 
+            technologists determined to unlock value for professional residential investors.
+          </h2>
         </div>
+
         <div className="flex row">
           <aside className='w-1/5'>
             <ul>
@@ -29,15 +30,15 @@ const People = () => {
           <main className="w-4/5">
               {people.map(({ data, title }, index) => (
                 <div>
-                  <h3 className="text-4xl mb-12 font-inter">{title}</h3>
+                  <h3 className="text-5xl mb-12 font-rubik">{title}</h3>
 
                   <div className="flex flex-wrap">
                     {data.map(d => (
                       <div key={index} className="w-1/3 mb-36">
                         <img src={d.image} alt={d.name} />
-                        <p className="text-3xl mt-12 mb-3">{d.name}</p>
+                        <p className="text-3xl font-rubik mt-12 mb-3">{d.name}</p>
                         <p className="text-base mb-3 font-light">{d.title}</p>
-                        <p className="text-base text-sm font-inter font-light" style={{ maxWidth: "250px" }}>{d.description}</p>
+                        <p className="text-base text-sm font-light max-w-[250px]">{d.description}</p>
                       </div>
                     ))}
                   </div>
