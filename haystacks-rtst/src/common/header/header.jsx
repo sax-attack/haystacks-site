@@ -48,7 +48,7 @@ const Header = () => {
   }, [isBurgerMenuOpened]);
 
   return (
-    <header className='p-6'>
+    <header className='p-6 xl2:px-8'>
       <nav className={`flex ${isBiggerSm ? 'justify-end' : ''} items-center`}>
         {isBiggerSm ? (
           <Link className='mr-auto' to={routes.home.url}>
