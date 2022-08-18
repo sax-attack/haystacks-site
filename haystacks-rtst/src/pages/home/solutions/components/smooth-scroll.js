@@ -8,10 +8,7 @@ export class SmoothScroll {
 
     this.elements = {
       scrollContent: this.element.querySelector('.scroll__content'),
-      // scrollContent: this.element.querySelector('.webgl-shader'),
     }
-
-    console.log(this.elements)
   }
 
   setSizes() {

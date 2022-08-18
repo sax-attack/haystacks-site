@@ -25,10 +25,10 @@ const SfrSolutions = () => {
 
           <PortfolioTabsContent currentTab={currentTab} />
 
-          <FeaturesSection />
+          <FeaturesSection currentTab={currentTab} />
         </div>
       </section>
-      
+
       <RequestForm />
     </div>
   )
