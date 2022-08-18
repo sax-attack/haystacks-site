@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        rubik: ["Rubik", "sans-serif"],
       },
     },
     colors: {
@@ -15,7 +16,6 @@ module.exports = {
         card: '#FFFFFF08',
         burgerMenu: '#161616',
         solutions: '#161616',
-        input: 'red'
       },
       border: {
         light: '#FFFFFF',

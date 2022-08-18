@@ -16,9 +16,9 @@ const Card = ({ className, children, maxWidth = '492px', ...props }) => {
   );
 };
 
-const Heading = ({ children, className }) => <h4 className={c('text-xl md:text-4xl mb-2', className)}>{children}</h4>;
-const Subheading = ({ children, className }) => <p className={c('text-xs md:text-lg mb-20', className)}>{children}</p>;
-const Text = ({ children, className }) => <p className={c('ext-xs md:text-lg', className)}>{children}</p>;
+const Heading = ({ children, className }) => <h4 className={c('text-xl md:text-3xl mb-2', className)}>{children}</h4>;
+const Subheading = ({ children, className }) => <p className={c('text-lg md:text-lg mb-20', className)}>{children}</p>;
+const Text = ({ children, className }) => <p className={c('font-light text-base', className)}>{children}</p>;
 const RightIcon = ({ className, to = '/' }) => (
   <Link to={to} className={c('absolute bottom-[29px] right-[36px]', className)}>
     <img src={ArrowRightIcon} alt='arrow-right' className='w-2 md:w-full' />

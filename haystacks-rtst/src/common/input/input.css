@@ -10,3 +10,8 @@
 .input-bg {
   background-color: transparent;
 }
+
+.input-bg::placeholder {
+  color: white;
+  opacity: 1;
+}

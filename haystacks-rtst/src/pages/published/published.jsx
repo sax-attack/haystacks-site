@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { RequestForm } from '../../common';
 import { routes } from '../../router';
 
 const Published = () => {
@@ -6,7 +7,11 @@ const Published = () => {
     document.title = routes.published.title;
   }, []);
 
-  return <div>Published</div>;
+  return ( 
+    <div>
+      <RequestForm />
+    </div>
+  )
 };
 
 export { Published };
