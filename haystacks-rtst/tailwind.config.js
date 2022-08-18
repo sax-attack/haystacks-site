@@ -5,17 +5,20 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        rubik: ["Rubik", "sans-serif"],
+        rubik: ['Rubik', 'sans-serif'],
       },
     },
     colors: {
       accent: '#49FF80',
+      transparent: '#00000000',
       background: {
         gray: '#606060',
+        gray200: '#60606033',
         accent: '#202326',
         card: '#FFFFFF08',
         burgerMenu: '#161616',
         solutions: '#161616',
+        input: 'red',
       },
       border: {
         light: '#FFFFFF',
