@@ -63,20 +63,23 @@ export const Solutions = () => {
             <img className="w-7" src={CubeIcon} alt="SolutionsLogo" />
             <p className="text-sm md:text-2xl">Solutions</p>
           </div>
+
           <div className="flex flex-col items-center md:items-start pt-8 md:pt-20 text-center md:text-left">
-            <p className="text-5xl md:text-7xl leading-10 w-2/5">{content.heading}</p>
+            <p className="text-5xl md:text-7xl w-2/5">{content.heading}</p>
             {content.subheading && <p className="text-xl md:text-5xl md:w-2/5">{content.subheading}</p>}
           </div>
         </div>
-        <div className="flex justify-center items-center md:justify-between text-center md:text-left">
-          <div className="flex flex-col cursor-pointer mr-5">
+
+        <div className="flex justify-center md:justify-between items-center text-center md:text-left">
+          <div className="flex flex-col mr-5 cursor-pointer">
             <button onClick={previousSlide} disabled={previousDisabled}>
               <img
-                className={c('rotate-180 mb-5 w-10', previousDisabled && 'opacity-50')}
+                className={c('w-10 mb-5 rotate-180', previousDisabled && 'opacity-50')}
                 src={ArrowDownIcon}
                 alt="Arrow down"
               />
             </button>
+
             <button onClick={nextSlide} disabled={nextDisabled}>
               <img
                 className={c('w-10', nextDisabled && 'opacity-50')}
