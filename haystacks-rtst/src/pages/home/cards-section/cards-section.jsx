@@ -21,7 +21,7 @@ const CardsSection = () => {
         {data.map((item) => (
           <Card
             key={item.heading}
-            className='w-[198px] sm:w-[300px] md:w-[100%] h-[270px] sm:h-[300px] md:h-[470px] md:max-w-auto mx-2.5 md:mx-2 '
+            className='w-[198px] sm:w-[300px] md:w-[100%] h-[270px] sm:h-[300px] md:h-[400px] md:max-w-auto mx-2.5 md:mx-2 '
           >
             <Card.Heading>{item.heading}</Card.Heading>
             <Card.Subheading>{item.subheading}</Card.Subheading>

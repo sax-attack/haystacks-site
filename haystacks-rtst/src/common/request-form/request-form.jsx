@@ -25,9 +25,9 @@ const RequestForm = () => (
     <p className="text-center text-base my-10">What solution(s) are you interested in?</p>
 
     <div className="flex flex-row justify-around border-t-2	border-b-2">
-      <p className="border-r-2 p-8 w-2/6 text-center">MI-95 Predictive Market Insider</p>
-      <p className="p-8 w-2/6 text-center">SFR Portfolio Architect</p>
-      <p className="border-l-2 text-center p-8 w-2/6">SFR Portfolio Simulator</p>
+      <p className="border-r-2 text-base p-8 w-2/6 text-center">MI-95 Predictive Market Insider</p>
+      <p className="p-8 w-2/6 text-base text-center">SFR Portfolio Architect</p>
+      <p className="border-l-2 text-base text-center p-8 w-2/6">SFR Portfolio Simulator</p>
     </div>
     
     <div className="mt-16 flex flex-row justify-center">

@@ -1,7 +1,5 @@
 :root {
-  /* --bg-splash: #161616; */
   --bg-brand-dark: #161616;
-  --font-family-brand: 'aktiv-grotesk';
-
+  --font-family-brand: 'Inter', 'sans-serif';
   --font-color-brand: #ffffff;
 }

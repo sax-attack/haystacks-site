@@ -39,16 +39,15 @@ body {
   flex-direction: column;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   font-family: var(--font-family-brand), sans-serif;
   font-style: normal;
   color: var(--font-color-brand);
-  font-weight: 500;
   line-height: 129%;
   letter-spacing: 0.02em;
-}
+} */
 
 p {
   font-size: 12px;
