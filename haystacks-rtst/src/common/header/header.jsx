@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Link } from '../link';
+import { Link, NavLink } from '../link';
 import { routes } from '../../router/routes';
 import { useWindowDimensions } from '../../hooks';
 import { constants } from '../../constants';
@@ -12,18 +12,18 @@ const Links = ({ isBiggerSm }) => {
   const className = isBiggerSm ? 'p-5' : 'text-2xl py-3.5';
   return (
     <>
-      <Link className={className} to={routes.market.url}>
+      <NavLink className={className} to={routes.market.url}>
         Market Solutions
-      </Link>
-      <Link className={className} to={routes.portfolio.url}>
+      </NavLink>
+      <NavLink className={className} to={routes.portfolio.url}>
         SFR Solutions
-      </Link>
-      <Link className={className} to={routes.people.url}>
+      </NavLink>
+      <NavLink className={className} to={routes.people.url}>
         People
-      </Link>
-      <Link className={className} to={routes.published.url}>
+      </NavLink>
+      <NavLink className={className} to={routes.published.url}>
         Published
-      </Link>
+      </NavLink>
     </>
   );
 };
@@ -43,7 +43,7 @@ const Header = () => {
     if (isBurgerMenuOpened) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'unset';
     }
   }, [isBurgerMenuOpened]);
 

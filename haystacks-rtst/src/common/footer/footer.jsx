@@ -33,7 +33,7 @@ const Footer = () => {
             Market Solutions
           </Link>
           <Link to={routes.portfolio.url} className='my-0.5 hover:!text-typography-main900'>
-            SFR Solutionsk
+            SFR Solutions
           </Link>
           <Link to={routes.people.url} className='my-0.5 hover:!text-typography-main900'>
             People

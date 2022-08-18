@@ -1,6 +1,6 @@
 export { Header } from './header';
 export { Footer } from './footer';
-export { Link } from './link';
+export { Link, NavLink } from './link';
 export { Button } from './button';
 export { Card } from './card';
 
