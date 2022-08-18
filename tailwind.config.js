@@ -23,6 +23,7 @@ module.exports = {
       border: {
         light: '#FFFFFF',
         gray: '#FFFFFF33',
+        "light-gray": "rgba(255, 255, 255, 0.8)"
       },
       typography: {
         light: '#FFFFFF',

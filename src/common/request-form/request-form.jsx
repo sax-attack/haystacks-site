@@ -3,9 +3,9 @@ import { Button } from '../button';
 import { Input } from '../input/input';
 
 const RequestForm = () => (
-  <section className='container py-20 md:py-32'>
+  <section className='container py-24 md:py-32'>
     <div className='flex flex-col items-center'>
-      <h2 className='text-sm md:text-3xl mb-5 text-center'>Request A Demo</h2>
+      <h2 className='text-sm md:text-3xl mb-12 text-center'>Request A Demo</h2>
       <p className='text-center text-xs md:text-base max-w-sm md:max-w-2xl font-light'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices, massa eu suscipit pellentesque, quam nunc aliquet
         sem, at volutpat orci tortor ut mi.
@@ -23,10 +23,10 @@ const RequestForm = () => (
 
     <p className='text-center text-base my-10'>What solution(s) are you interested in?</p>
 
-    <div className='flex flex-col md:flex-row justify-around md:border-t-2	md:border-b-2'>
-      <p className='md:border-r-2 text-xs md:text-base p-4 md:p-8 md:w-2/6 text-center'>MI-95 Predictive Market Insider</p>
+    <div className='flex flex-col md:flex-row justify-around border-border-light-gray md:border-t md:border-b'>
+      <p className='border-border-light-gray md:border-r text-xs md:text-base p-4 md:p-8 md:w-2/6 text-center'>MI-95 Predictive Market Insider</p>
       <p className='p-4 md:p-8 md:w-2/6 text-xs md:text-base text-center'>SFR Portfolio Architect</p>
-      <p className='md:border-l-2 text-xs md:text-base text-center p-4 md:p-8 md:w-2/6'>SFR Portfolio Simulator</p>
+      <p className='border-border-light-gray md:border-l text-xs md:text-base text-center p-4 md:p-8 md:w-2/6'>SFR Portfolio Simulator</p>
     </div>
 
     <div className='mt-16 flex flex-row justify-center'>
