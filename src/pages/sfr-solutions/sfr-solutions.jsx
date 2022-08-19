@@ -17,7 +17,7 @@ const SfrSolutions = () => {
 
   return (
     <div>
-      <section className="section mt-32">
+      <section className="section mt-10">
         <div className="container">
           <PortfolioTabs currentTab={currentTab} changeTab={changeTab} />
 
