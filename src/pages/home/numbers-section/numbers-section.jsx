@@ -15,12 +15,12 @@ const data = [
 
 const NumbersSection = () => {
   return (
-    <div className='p-5 md:p-20 md:bg-background-accent'>
+    <div className='p-5 md:p-20'>
       <div className='flex flex-col md:flex-row justify-around items-center'>
         {data.map((item) => (
           <div key={item.num} className='flex flex-col items-center text-center max-w-[270px]'>
             <div className='text-6xl md:text-8xl mb-2'>{item.num}</div>
-            <div className='text-xs md:text-lg mb-14 md:mb-0'>{item.description}</div>
+            <div className='text-sm md:text-lg mb-14 md:mb-0 md:w-[200px] lg:w-[300px] font-extralight'>{item.description}</div>
           </div>
         ))}
       </div>

@@ -3,7 +3,7 @@ import { routes } from '../../router';
 import { HomeTopSection } from './top-section';
 import { NumbersSection } from './numbers-section';
 import { CardsSection } from './cards-section';
-import { Solutions } from './solutions'
+import { Solutions } from './solutions';
 import { BigText, RequestForm } from '../../common';
 
 const Home = () => {
@@ -20,6 +20,9 @@ const Home = () => {
       <Solutions />
       <CardsSection />
       <NumbersSection />
+      <BigText className='md:!pb-20'>
+        Haystacks.AI's senior leadership has raised over $4+ billion for RE investments from leading institutional investors.
+      </BigText>
       <RequestForm />
     </Fragment>
   );

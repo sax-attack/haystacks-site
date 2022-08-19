@@ -1,12 +1,15 @@
 import React from 'react';
 import { Button } from '../button';
 import { Input } from '../input/input';
+import CubeIcon from '../../assets/cube-icon.svg';
 
 const RequestForm = () => (
-  <section className='container py-24 md:py-32'>
+  <section className='container py-24 md:px-24 md:py-32'>
     <div className='flex flex-col items-center'>
-      <h2 className='text-sm md:text-3xl mb-12 text-center'>Request A Demo</h2>
-      <p className='text-center text-xs md:text-base max-w-sm md:max-w-2xl font-light'>
+      <img src={CubeIcon} alt='cube' className='w-12 h-12 mb-4' />
+
+      <h2 className='text-sm md:text-3xl mb-12 text-center font-light'>Request A Demo</h2>
+      <p className='text-center text-xs md:text-base max-w-sm md:max-w-2xl font-light px-10'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices, massa eu suscipit pellentesque, quam nunc aliquet
         sem, at volutpat orci tortor ut mi.
       </p>
@@ -24,9 +27,13 @@ const RequestForm = () => (
     <p className='text-center text-base my-10'>What solution(s) are you interested in?</p>
 
     <div className='flex flex-col md:flex-row justify-around border-border-light-gray md:border-t md:border-b'>
-      <p className='border-border-light-gray md:border-r text-xs md:text-base p-4 md:p-8 md:w-2/6 text-center'>MI-95 Predictive Market Insider</p>
+      <p className='border-border-light-gray md:border-r text-xs md:text-base p-4 md:p-8 md:w-2/6 text-center'>
+        MI-95 Predictive Market Insider
+      </p>
       <p className='p-4 md:p-8 md:w-2/6 text-xs md:text-base text-center'>SFR Portfolio Architect</p>
-      <p className='border-border-light-gray md:border-l text-xs md:text-base text-center p-4 md:p-8 md:w-2/6'>SFR Portfolio Simulator</p>
+      <p className='border-border-light-gray md:border-l text-xs md:text-base text-center p-4 md:p-8 md:w-2/6'>
+        SFR Portfolio Simulator
+      </p>
     </div>
 
     <div className='mt-16 flex flex-row justify-center'>
