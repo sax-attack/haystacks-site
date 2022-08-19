@@ -56,7 +56,7 @@ const data = [
 export const PortfolioTabsContent = ({ currentTab }) => (
   <>
     <div className="flex flex-col items-center">
-      <p className="text-2xl font-light text-center mt-12">
+      <p className="text-2xl font-extralight text-center mt-12">
         Built with an institutional mindset, our platform provides unparalleled speed <br /> and scale in both
         assembling and managing residential portfolios.
       </p>
@@ -78,7 +78,7 @@ export const PortfolioTabsContent = ({ currentTab }) => (
 
     <div className="flex flex-col items-center px-24 mb-16 text-center">
       <img src={CubeIcon} alt="cube" className="w-12 h-12 mb-4" />
-      <p className="text-2xl">{data[currentTab].footer}</p>
+      <p className="text-2xl font-extralight">{data[currentTab].footer}</p>
     </div>
   </>
 )
