@@ -14,15 +14,20 @@ const Home = () => {
   return (
     <Fragment>
       <HomeTopSection />
-      <BigText>
-        Our AI and Machine Learning enables real estate investors to underwrite and optimize investments strategies in real-time.
-      </BigText>
+      <div className='bg-background-gray200 md:bg-transparent'>
+        <BigText>
+          Our AI and Machine Learning enables real estate investors to underwrite and optimize investments strategies in
+          real-time.
+        </BigText>
+      </div>
       <Solutions />
       <CardsSection />
       <NumbersSection />
-      <BigText className='md:!pb-20'>
-        Haystacks.AI's senior leadership has raised over $4+ billion for RE investments from leading institutional investors.
-      </BigText>
+      <div className='bg-background-gray200 md:bg-transparent'>
+        <BigText className='md:!pb-20'>
+          Haystacks.AI's senior leadership has raised over $4+ billion for RE investments from leading institutional investors.
+        </BigText>
+      </div>
       <RequestForm />
     </Fragment>
   );

@@ -36,21 +36,23 @@ const posts = [
 
 const Blog = () => {
   return (
-    <section className='container px-8'>
-      <div className='px-24'>
-        <h2 className='text-center md:text-left py-16 md:py-40 text-lg md:text-3xl max-w-4xl'>Featured Publications</h2>
-      </div>
+    <section className='container'>
+      <div className="section">
+        <div className='px-24'>
+          <h2 className='text-center font-rubik md:text-left py-16 md:py-40 text-lg md:text-3xl max-w-4xl'>Featured Publications</h2>
+        </div>
 
-      <div className='flex flex-col md:flex-row justify-between flex-wrap'>
-        {posts.map((post, index) => (
-          <BlogPost
-            key={index}
-            category={post.category}
-            title={post.title}
-            date={post.date}
-            className='mx-10 md:mx-2 md:w-[48%]'
-          />
-        ))}
+        <div className='flex flex-col md:flex-row justify-between flex-wrap'>
+          {posts.map((post, index) => (
+            <BlogPost
+              key={index}
+              category={post.category}
+              title={post.title}
+              date={post.date}
+              className='md:w-[47%]'
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

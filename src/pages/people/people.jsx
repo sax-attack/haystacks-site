@@ -58,14 +58,12 @@ const People = () => {
                 <h3 className='text-center md:text-left text-sm md:text-5xl mb-12 font-rubik pt-2'>{title}</h3>
                 <div className='w-[75%] my-0 mx-auto md:mx-0 md:w-auto flex flex-wrap md:justify-start'>
                   {data.map((d) => (
-                    <>
                       <div key={d.name} className='w-1/3 mb-6 md:mb-36 mx-5 md:mx-1 lg:mx-0'>
                         <img src={d.image} alt={d.name} className='object-cover w-[132px] h-[168px] md:w-[244px] md:h-[311px]' />
                         <p className='text-sm md:text-3xl font-rubik mt-12 mb-3'>{d.name}</p>
                         <p className='text-sm md:text-base mb-3 font-light'>{d.title}</p>
                         <p className='hidden md:block text-sm font-light max-w-[250px]'>{d.description}</p>
                       </div>
-                    </>
                   ))}
                 </div>
               </div>
