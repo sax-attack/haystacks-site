@@ -9,6 +9,7 @@ module.exports = {
       },
     },
     colors: {
+      danger: '#E4003A',
       accent: '#49FF80',
       transparent: '#00000000',
       background: {

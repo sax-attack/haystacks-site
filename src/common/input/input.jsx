@@ -14,12 +14,12 @@ const Input = ({
         {...rest}
         placeholder={placeholder}
         className={classNames([
-          "input-bg text-black w-full py-5 px-6 appearance-none border-0 outline-0 border-b",
-          !!error && "input_invalid",
+          "relative input-bg text-black w-full py-5 font-extralight px-6 appearance-none border-0 outline-0 border-b",
+          !!error && "input__error",
         ])}
       />
 
-      <p className="text-sm absolute text-rose-500 mt-1">{error}</p>
+      <p className="error-text absolute text-sm text-danger mt-1">{error}</p>
     </div>
   );
 };

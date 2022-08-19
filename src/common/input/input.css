@@ -2,9 +2,13 @@
   width: 100%;
 }
 
-.input__error {
-  letter-spacing: 0.3px;
+.error-text {
   position: absolute;
+  color: #E4003A;
+}
+
+.input__error {
+  border-color: #E4003A !important;
 }
 
 .input-bg {

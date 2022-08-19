@@ -75,6 +75,10 @@ p {
   max-width: 250px;
 }
 
+.section {
+  padding: 0 34px;
+}
+
 .content-section {
   position: relative;
   width: 100%;
