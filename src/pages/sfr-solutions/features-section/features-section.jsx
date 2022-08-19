@@ -29,25 +29,23 @@ const data = [
     },
     {
       title: 'Exclusive Access To Off-Market Trades',
-      subtitle:
-        'Evaluate and execute trades with other institutions directly through the Haystacks.AI platform. Coming Soon.',
+      subtitle: 'Evaluate and execute trades with other institutions directly through the Haystacks.AI platform. Coming Soon.',
     },
   ],
-]
+];
 
 export const FeaturesSection = ({ currentTab }) => (
-  <div className="mt-16">
-    <div className="flex flex-col md:flex-row justify-around mb-40">
-      {data[currentTab].map(item => (
-        <div key={item.title} className="flex flex-col items-center max-w-[270px]">
-          <div className="font-roboto font-medium text-4xl md:text-4xl mb-8">{item.title}</div>
-          <div className="font-inter font-extralight text-sm md:text-sm mb-14 md:mb-0">{item.subtitle}</div>
+  <div className='mt-16'>
+    <div className='flex flex-col md:flex-row justify-around mb-40'>
+      {data[currentTab].map((item) => (
+        <div
+          key={item.title}
+          className='flex flex-col items-center md:max-w-[270px] pt-10 px-10 md:py-2 md:px-2 text-center md:text-left'
+        >
+          <div className='font-roboto font-medium text-lg md:text-4xl mb-4 md:mb-8'>{item.title}</div>
+          <div className='font-inter font-extralight text-sm md:text-base mb-14 md:mb-0'>{item.subtitle}</div>
         </div>
       ))}
     </div>
-
-    <p className="font-inter font-extralight text-2xl text-center px-24">
-      Haystacks plugs our clients into deep-rooted property management infrastructure at large fund pricing.
-    </p>
   </div>
-)
+);

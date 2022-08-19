@@ -17,7 +17,7 @@ const ContactFormSchema = Yup.object().shape({
   position: Yup.string().max(500).required('Required'),
 });
 
-const RequestForm = () => {
+const RequestForm = ({ className }) => {
   const [isLoading, setLoading] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState('N/A');
 
@@ -57,7 +57,7 @@ const RequestForm = () => {
   });
 
   return (
-    <section className='container py-24 md:py-44'>
+    <section className={c('container py-24 md:py-44', className)}>
       <ToastContainer
         position='top-right'
         hideProgressBar

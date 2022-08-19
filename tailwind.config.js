@@ -29,6 +29,7 @@ module.exports = {
       },
       typography: {
         light: '#FFFFFF',
+        light60: '#FFFFFF99',
         light900: '#BDBDBD',
         main: '#000000',
         main900: '#2e2e2e',
