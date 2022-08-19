@@ -94,7 +94,7 @@ const RequestForm = () => {
 
           <Input
             onChange={handleChange("lastName")}
-            onBlur={handleBlur("lastName")}  
+            onBlur={handleBlur("lastName")}
             placeholder='Last Name'
             error={errors.lastName && touched.lastName ? errors.lastName : ""}
             className='mb-3 md:mb-7 md:w-1/2' />
