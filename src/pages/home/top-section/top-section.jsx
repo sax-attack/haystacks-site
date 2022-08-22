@@ -20,10 +20,9 @@ const HomeTopSection = () => {
 
       {isBiggerSm &&
             <video
-                  autoPlay
+             autoplay muted
                   style={{position: 'absolute', left: 0, top: -110, right: 0, zIndex: -1}}
                   src={Hero}
-                  loop
                 ></video>
       }
 
