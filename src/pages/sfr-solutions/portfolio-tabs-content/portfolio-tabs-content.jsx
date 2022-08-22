@@ -87,7 +87,7 @@ export const PortfolioTabsContent = ({ currentTab }) => {
 
       <div className='flex flex-col items-center md:flex-row mt-24 mb-28'>
         {isBiggerSm ? (
-          <Swiper navigation modules={[Navigation]} spaceBetween={50} slidesPerView={3}>
+          <Swiper navigation modules={[Navigation]} spaceBetween={32} slidesPerView={3}>
             {data[currentTab].content.map((item, index) => (
               <SwiperSlide key={item.heading} className='story-container'>
                 <Card key={item.heading} className='h-[430px]'>
@@ -120,7 +120,7 @@ export const PortfolioTabsContent = ({ currentTab }) => {
       <div>
         <video
           autoPlay
-          controls
+          loop
           type='video/mov'
           src={isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}
         ></video>
