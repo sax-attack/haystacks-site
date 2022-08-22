@@ -4,7 +4,7 @@ import { Card } from '../../../common';
 import { useWindowDimensions } from '../../../hooks';
 import { constants } from '../../../constants';
 import CubeIcon from '../../../assets/cube-icon.svg';
-import PortfolioArchitectDesktopVideo from '../../../assets/Architect_Desktop.mov';
+import PortfolioArchitectDesktopVideo from '../../../assets/Architect_Desktop2.mov';
 import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mov';
 import PortfolioSimulatorDesktopVideo from '../../../assets/Simulator_Desktop.mov';
 import PortfolioSimulatorMobileVideo from '../../../assets/Simulator_Mobile.mov';
