@@ -8,9 +8,10 @@ module.exports = {
         rubik: ['Rubik', 'sans-serif'],
       },
     },
-    // backgroundImage: {
-    //   bg: "url('./assets/Background.png')",
-    // },
+    backgroundImage: {
+      // bg: "url('./assets/Background.png')",
+      sectionBg: "url('./assets/Section_Background.png')",
+    },
     colors: {
       danger: '#E4003A',
       accent: '#49FF80',
