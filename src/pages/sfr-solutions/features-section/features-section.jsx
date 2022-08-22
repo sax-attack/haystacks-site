@@ -11,7 +11,7 @@ const data = [
         'In-place teams allow the submission of hundreds of offers a day, which is necessary for quick capital deployment.',
     },
     {
-      title: 'Integrated Property Management Infrastructure',
+      title: 'Integrated Property Management',
       subtitle:
         'Plug into the local institutional property management infrastructure to access best in class contractors, leasing teams, rent collectors and maintenance management.',
     },

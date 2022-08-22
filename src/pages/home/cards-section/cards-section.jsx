@@ -3,7 +3,7 @@ import { routes } from '../../../router/routes';
 
 const data = [
   {
-    heading: 'Market Analysis',
+    heading: 'Market Intelligence',
     subheading: 'Lens',
     text: 'Utilizing hundreds of alternative data points investors can predict market trends, visualize “hot spots” and customize reports to refine underwriting assumptions on the fly.',
     link: routes.market.url,

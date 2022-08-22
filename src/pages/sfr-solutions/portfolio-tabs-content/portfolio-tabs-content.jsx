@@ -17,7 +17,7 @@ const data = [
   {
     heading: 'Portfolio Architect',
     footer:
-      'Select the market in the Buy Box with predefined location and property characteristics that meet your portfolio assumptions.',
+      'Select micro-markets to create your Buy Box based on location and property characteristics that meet your portfolio assumptions.',
     desktopVideo: PortfolioArchitectDesktopVideo,
     mobileVideo: PortfolioArchitectMobileVideo,
     content: [

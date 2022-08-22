@@ -19,7 +19,7 @@ const data = [
   },
   {
     heading: 'Customize micro-market intelligence reports.',
-    text: 'Primary data and proprietary alternative data points are seamlessly integrated on one customizable heat map to create an easy to understand visualization of the markets that best ﬁt your underlying investment thesis.',
+    text: 'Layer datapoints then determine priority through Haystacks.AI propriety weighting tool. Refine assumptions to simulate theses for micro-market investments then add the heatmap to investment memos.',
   },
 ];
 
@@ -44,25 +44,10 @@ const MarketSolutions = () => {
               points predicting market change.
             </p>
           </div>
-
-          <div className='flex flex-col md:flex-row justify-between mt-24'>
-            {data.map((item) => (
-              <Card
-                key={item.heading}
-                subheading={item.subheading}
-                text={item.text}
-                className='w-full md:w-2/6 mb-8 md:mb-0 mr-8'
-              >
-                <Card.Heading>{item.heading}</Card.Heading>
-                <Card.Text className='mt-5'>{item.text}</Card.Text>
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
 
-      <div className='flex flex-col items-center px-24 pb-8 mt-20 md:pb-16 text-center'>
-        <img src={CubeIcon} alt='cube' className='w-12 h-12 mb-4' />
+      <div className='flex flex-col items-center px-24 pb-8 mt-16 md:pb-16 text-center'>
         <p className='text-sm md:text-2xl font-extralight'>
           Customize the intelligent heatmap by weighting the metrics to uncover matching micro-markets.
         </p>
@@ -86,6 +71,22 @@ const MarketSolutions = () => {
             height='480'
           ></video>
         )}
+      </div>
+
+      <div className="container">
+        <div className='flex flex-col md:flex-row justify-between mt-24'>
+            {data.map((item) => (
+              <Card
+                key={item.heading}
+                subheading={item.subheading}
+                text={item.text}
+                className='w-full md:w-2/6 mb-8 md:mb-0 mr-8'
+              >
+                <Card.Heading>{item.heading}</Card.Heading>
+                <Card.Text className='mt-5'>{item.text}</Card.Text>
+              </Card>
+            ))}
+          </div>
       </div>
 
       <RequestForm />
