@@ -79,10 +79,10 @@ export const people = [
         image: Joselyn,
       },
       {
-        name: 'Tom Stults',
-        title: 'Co-founder & Head of Investment Strategy',
+        name: 'Adam Ketai',
+        title: 'VP of Strategy & Operations',
         description:
-          'RE PE fund manager, Watchung Capital founding Partner, former Cadre senior executive (member of leadership team and among ﬁrst employees), Baupost Principal, Goldman Sachs, Middlebury College BA',
+          'Former RE manager Ori (A Sidewalk Labs Venture), former senior director of acquisitions CA Ventures, Bedrock Real Estate Services, University of Michigan BA & Certiﬁcate of Entrepreneurship',
         image: Adam,
       },
       {
