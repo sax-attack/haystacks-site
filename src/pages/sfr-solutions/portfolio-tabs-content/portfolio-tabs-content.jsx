@@ -33,14 +33,14 @@ const data = [
         heading: 'Deploy Efficiently',
         text: 'Acquire and maximize value through Haystacks.AI’s local offer & property management partnerships.',
       },
-      {
-        heading: 'Simulate Hold/Sell',
-        text: 'Utilize Haystacks.ai yearly rent projections to understand when markets will appreciate/level off, and craft a strategy to maximize portfolio exits.',
-      },
-      {
-        heading: 'Execute Trades',
-        text: 'Eﬃciently execute portfolio trades with other institutions on our platform to take advantage of off-market portfolio opportunities.',
-      },
+      // {
+      //   heading: 'Simulate Hold/Sell',
+      //   text: 'Utilize Haystacks.ai yearly rent projections to understand when markets will appreciate/level off, and craft a strategy to maximize portfolio exits.',
+      // },
+      // {
+      //   heading: 'Execute Trades',
+      //   text: 'Eﬃciently execute portfolio trades with other institutions on our platform to take advantage of off-market portfolio opportunities.',
+      // },
     ],
   },
   {
@@ -52,6 +52,7 @@ const data = [
       {
         heading: 'Deploy Efficiently',
         text: 'Acquire and maximize value through Haystacks.AI’s local offer & property management partnerships.',
+        isGrayedOut: true
       },
       {
         heading: 'Simulate Hold/Sell',
@@ -90,7 +91,7 @@ export const PortfolioTabsContent = ({ currentTab }) => {
           <Swiper navigation modules={[Navigation]} spaceBetween={32} slidesPerView={3}>
             {data[currentTab].content.map((item, index) => (
               <SwiperSlide key={item.heading} className='story-container'>
-                <Card key={item.heading} className='h-[430px]'>
+                <Card key={item.heading} className='h-[430px]' style={item.isGrayedOut && { opacity: 0.5 }}>
                   <p className='font-roboto font-light text-xl mb-7'>0{index + 1}</p>
                   <Card.Heading className='font-roboto font-medium w-full mb-20'>{item.heading}</Card.Heading>
                   <Card.Text className='font-inter font-light'>{item.text}</Card.Text>

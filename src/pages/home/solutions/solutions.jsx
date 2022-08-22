@@ -57,7 +57,7 @@ export const Solutions = () => {
     const nextDisabled = slide === 2
 
     return (
-      <section className="section flex flex-col justify-between min-h-screen px-7 pb-20 pt-10">
+      <section className="flex flex-col justify-between min-h-screen px-7 pb-20 pt-10">
         <div>
           <div className="flex flex-col items-center">
             <img className="w-7" src={CubeIcon} alt="SolutionsLogo" />

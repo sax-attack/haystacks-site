@@ -20,7 +20,7 @@ const RequestForm = ({ className }) => {
   const [isLoading, setLoading] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState([]);
 
-  const solution1 = 'MI-95 Predictive Market Insider';
+  const solution1 = 'Lens: Predictive Market Insider';
   const solution2 = 'SFR Portfolio Architect';
   const solution3 = 'SFR Portfolio Simulator';
 
@@ -66,7 +66,7 @@ const RequestForm = ({ className }) => {
   }
 
   return (
-    <section className={c('container py-24 md:py-44', className)}>
+    <section id="demo" className={c('container py-24 md:py-44', className)}>
       <ToastContainer
         position='top-right'
         hideProgressBar
