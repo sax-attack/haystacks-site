@@ -95,7 +95,7 @@ export const Solutions = () => {
   }
 
   return (
-    <div className="content relative bg-background-solutions">
+    <div className="content relative bg-background-solutions py-20">
       <div className="scroll__stage container">
         <div className="scroll__content w-full will-change-transform">{renderSlide()}</div>
       </div>

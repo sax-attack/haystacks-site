@@ -5,6 +5,8 @@ import { routes } from '../../router';
 import { useWindowDimensions } from '../../hooks';
 import { constants } from '../../constants';
 import CubeIcon from '../../assets/cube-icon.svg';
+import LensDesktop from '../../assets/Lens_Desktop.mov';
+import LensMobile from '../../assets/Lens_Mobile.mov';
 
 const data = [
   {
@@ -68,19 +70,21 @@ const MarketSolutions = () => {
 
       <div className='max-w-[1200px] mx-auto'>
         {isBiggerSm ? (
-          <iframe
-            src='https://drive.google.com/file/d/1709VnSYfaDxyWoA5QrGExD67E4rASz1G/preview'
+          <video
+            autoPlay
+            src={LensDesktop}
+            loop
             width='100%'
             height='480'
-            allow='autoplay'
-          ></iframe>
+          ></video>
         ) : (
-          <iframe
-            src='https://drive.google.com/file/d/171dOgCKFimyTRFFqs7zGT1cb3_w_vsHQ/preview'
+          <video
+            autoPlay
+            src={LensMobile}
+            loop
             width='100%'
             height='480'
-            allow='autoplay'
-          ></iframe>
+          ></video>
         )}
       </div>
 
