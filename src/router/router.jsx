@@ -1,9 +1,8 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { Home, MarketSolutions, SfrSolutions, People, Published, Page404 } from '../pages';
-import { useLayoutEffect } from 'react'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Home, MarketSolutions, SfrSolutions, People, Published, Page404, Privacy } from '../pages';
+import { useLayoutEffect } from 'react';
 import { routes } from './routes';
 import { MainLayout } from './main-layout';
-
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -12,8 +11,8 @@ const Wrapper = ({ children }) => {
     document.documentElement.scrollTo(0, 0);
   }, [location.pathname]);
 
-  return children
-} 
+  return children;
+};
 
 const Router = () => {
   return (
@@ -62,6 +61,15 @@ const Router = () => {
             element={
               <MainLayout>
                 <Published />
+              </MainLayout>
+            }
+          />
+          <Route
+            exact
+            path={routes.privacy.url}
+            element={
+              <MainLayout>
+                <Privacy />
               </MainLayout>
             }
           />

@@ -15,9 +15,10 @@ const Footer = () => {
       <div className='self-center mb-5 md:mb-0'>{<ProductLogo />}</div>
       <div className='flex flex-row justify-around basis-8/12'>
         <p className='text-sm md:text-lg leading-7 text-typography-main hover:text-typography-main900'>
-          1123 Broadway Suite 601,<br /> New York, NY 10010
+          1123 Broadway Suite 601,
+          <br /> New York, NY 10010
         </p>
-        
+
         <div className='hidden md:flex flex-col text-typography-main text-lg leading-7'>
           <Link to={routes.market.url} className='my-0.5 hover:!text-typography-main900'>
             Market Intelligence
@@ -33,12 +34,12 @@ const Footer = () => {
           </Link>
         </div>
         <div className='flex flex-col text-typography-main text-sm md:text-lg leading-7 justify-end md:justify-start'>
-          <a href='/' className='my-0.5 hover:text-typography-main900'>
+          <Link to={routes.privacy.url} className='my-0.5 hover:!text-typography-main900'>
             Terms + Conditions
-          </a>
-          <a href='/' className='my-0.5 hover:text-typography-main900'>
+          </Link>
+          <Link to={routes.privacy.url} className='my-0.5 hover:!text-typography-main900'>
             Privacy Notice
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

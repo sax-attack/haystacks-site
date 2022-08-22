@@ -4,3 +4,4 @@ export { People } from './people';
 export { Published } from './published';
 export { SfrSolutions } from './sfr-solutions';
 export { Page404 } from './404';
+export { Privacy } from './privacy';

@@ -4,6 +4,10 @@ import { Card } from '../../../common';
 import { useWindowDimensions } from '../../../hooks';
 import { constants } from '../../../constants';
 import CubeIcon from '../../../assets/cube-icon.svg';
+import PortfolioArchitectDesktopVideo from '../../../assets/Architect_Desktop.mov';
+import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mov';
+import PortfolioSimulatorDesktopVideo from '../../../assets/Simulator_Desktop.mov';
+import PortfolioSimulatorMobileVideo from '../../../assets/Simulator_Mobile.mov';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,6 +18,8 @@ const data = [
     heading: 'Portfolio Architect',
     footer:
       'Select the market in the Buy Box with predefined location and property characteristics that meet your portfolio assumptions.',
+    desktopVideo: PortfolioArchitectDesktopVideo,
+    mobileVideo: PortfolioArchitectMobileVideo,
     content: [
       {
         heading: 'Customize Assumptions',
@@ -40,6 +46,8 @@ const data = [
   {
     heading: 'Portfolio Simulator',
     footer: 'Simulate 1YR, 3YR and 5YR hold/sell strategies.',
+    desktopVideo: PortfolioSimulatorDesktopVideo,
+    mobileVideo: PortfolioSimulatorMobileVideo,
     content: [
       {
         heading: 'Deploy Efficiently',
@@ -107,6 +115,15 @@ export const PortfolioTabsContent = ({ currentTab }) => {
       <div className='flex flex-col items-center px-24 pb-8 md:pb-16 text-center'>
         <img src={CubeIcon} alt='cube' className='w-12 h-12 mb-4' />
         <p className='text-sm md:text-2xl font-extralight'>{data[currentTab].footer}</p>
+      </div>
+
+      <div>
+        <video
+          autoPlay
+          controls
+          type='video/mov'
+          src={isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}
+        ></video>
       </div>
     </>
   );

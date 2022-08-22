@@ -19,15 +19,15 @@ const data = [
 const CardsSection = () => {
   return (
     <div className='py-10 container'>
-      <div className="section">
-        <h2 className='font-extralight text-sm md:text-2xl mb-3.5 md:mb-12 mx-2.5 md:mx-2 px-4 sm:px-6'>
+      <div className=''>
+        <h2 className='font-extralight text-sm md:text-2xl mb-3.5 md:mb-12 mx-10 md:mx-2.5 md:mx-2 px-4 sm:px-6'>
           Explore our Solutions Further
         </h2>
-        <div className='flex w-full md:justify-around w-fit mb-14 px-4 sm:px-6 overflow-x-scroll md:overflow-x-hidden overflow-y-hidden'>
+        <div className='flex flex-col md:flex-row w-full md:justify-around items-center mb-14 px-4 sm:px-6'>
           {data.map((item) => (
             <Card
               key={item.heading}
-              className='w-[198px] sm:w-[300px] md:w-[100%] h-[270px] sm:h-[300px] md:h-[400px] md:max-w-auto mx-2.5 md:mx-2 '
+              className='w-[300px] md:w-[100%] h-[270px] sm:h-[300px] md:h-[400px] md:max-w-auto mx-2.5 md:mx-2 my-2'
             >
               <Card.Heading>{item.heading}</Card.Heading>
               <Card.Subheading>{item.subheading}</Card.Subheading>

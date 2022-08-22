@@ -19,8 +19,8 @@ const routes = {
     url: '/published',
     title: 'Haystacks',
   },
-  splash: {
-    url: '/splash',
+  privacy: {
+    url: '/privacy',
     title: 'Haystacks',
   },
 };

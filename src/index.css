@@ -32,6 +32,7 @@ div {
 body {
   width: 100%;
   background-color: var(--bg-brand-dark);
+  overflow-x: hidden !important;
 }
 
 #root {

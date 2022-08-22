@@ -8,17 +8,20 @@ import Logo from '../../assets/h-logo.svg';
 import BurgerMenuIcon from '../../assets/burger-menu-icon.svg';
 import CloseIcon from '../../assets/close-icon.svg';
 
-const logo = <img src={Logo} className="mt-3" alt='Haystacks logo' />;
+const logo = <img src={Logo} className='mt-3' alt='Haystacks logo' />;
 
 const Links = ({ isBiggerSm }) => {
-  const className = isBiggerSm ? 'p-5' : 'text-2xl py-10 mx-12 border-border-gray500 border-y-[0.5px] font-extralight';
+  const className = isBiggerSm ? 'p-5' : 'text-2xl py-7 mx-12 border-border-gray500 border-y-[0.5px] font-extralight';
   return (
     <>
+      <NavLink className={className} to={routes.home.url}>
+        Home
+      </NavLink>
       <NavLink className={className} to={routes.market.url}>
-        Market Solutions
+        Market Intelligence
       </NavLink>
       <NavLink className={className} to={routes.portfolio.url}>
-        SFR Solutions
+        Portfolio Solutions
       </NavLink>
       <NavLink className={className} to={routes.people.url}>
         People
