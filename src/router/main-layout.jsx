@@ -1,7 +1,5 @@
 import { Header, Footer } from '../common';
 
-// import BG from '../assets/Background.png';
-
 const MainLayout = ({ children }) => {
   return (
     <div className='bg-bg bg-no-repeat bg-cover'>
