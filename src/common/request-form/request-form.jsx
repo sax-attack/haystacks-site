@@ -14,12 +14,11 @@ const ContactFormSchema = Yup.object().shape({
   lastName: Yup.string().max(50, 'Maximum 50 letters are allowed').required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
   company: Yup.string().required('Required'),
-  position: Yup.string().max(500).required('Required'),
 });
 
 const RequestForm = ({ className }) => {
   const [isLoading, setLoading] = useState(false);
-  const [selectedSolution, setSelectedSolution] = useState('N/A');
+  const [selectedSolution, setSelectedSolution] = useState([]);
 
   const solution1 = 'MI-95 Predictive Market Insider';
   const solution2 = 'SFR Portfolio Architect';
@@ -56,6 +55,16 @@ const RequestForm = ({ className }) => {
     onSubmit,
   });
 
+  const onSelect = (option) => {
+    if (selectedSolution.includes(option)) {
+      const filteredOptions = selectedSolution.filter(opt => opt !== option);
+
+      setSelectedSolution(filteredOptions);
+    } else {
+      setSelectedSolution([...selectedSolution, option]);
+    }
+  }
+
   return (
     <section className={c('container py-24 md:py-44', className)}>
       <ToastContainer
@@ -74,8 +83,7 @@ const RequestForm = ({ className }) => {
           <img src={CubeIcon} alt='cube' className='w-12 h-12 mb-4' />
           <h2 className='text-lg md:text-3xl mb-12 text-center font-light'>Request A Demo</h2>
           <p className='text-center text-sm md:text-base max-w-sm md:max-w-2xl font-light px-10'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices, massa eu suscipit pellentesque, quam nunc
-            aliquet sem, at volutpat orci tortor ut mi.
+            Complete the form and a Haystacks.AI expert will reach out to schedule a custom demo for your needs.
           </p>
         </div>
 
@@ -116,7 +124,7 @@ const RequestForm = ({ className }) => {
         <Input
           onChange={handleChange('position')}
           onBlur={handleBlur('position')}
-          error={errors.email && touched.email ? errors.email : ''}
+          error={errors.position && touched.position ? errors.position : ''}
           placeholder='Position'
           className='mb-3 md:mb-7'
         />
@@ -125,28 +133,28 @@ const RequestForm = ({ className }) => {
 
         <div className='flex flex-col md:flex-row justify-around border-border-light-gray md:border-t md:border-b'>
           <p
-            onClick={() => setSelectedSolution(solution1)}
+            onClick={() => onSelect(solution1)}
             className={c(
               'cursor-pointer border-border-light-gray md:border-r text-sm md:text-base p-4 md:p-8 md:w-2/6 text-center font-extralight',
-              selectedSolution === solution1 && 'font-bold'
+              selectedSolution.includes(solution1) && 'font-bold'
             )}
           >
             {solution1}
           </p>
           <p
-            onClick={() => setSelectedSolution(solution2)}
+            onClick={() => onSelect(solution2)}
             className={c(
               'cursor-pointer p-4 md:p-8 md:w-2/6 text-sm md:text-base text-center font-extralight',
-              selectedSolution === solution2 && 'font-bold'
+              selectedSolution.includes(solution2) && 'font-bold'
             )}
           >
             {solution2}
           </p>
           <p
-            onClick={() => setSelectedSolution(solution3)}
+            onClick={() => onSelect(solution3)}
             className={c(
               'cursor-pointer border-border-light-gray md:border-l text-sm md:text-base text-center p-4 md:p-8 md:w-2/6 font-extralight',
-              selectedSolution === solution3 && 'font-bold'
+              selectedSolution.includes(solution3) && 'font-bold'
             )}
           >
             {solution3}
@@ -155,7 +163,7 @@ const RequestForm = ({ className }) => {
 
         <div className='mt-16 flex flex-row justify-center'>
           <Button type='submit' disabled={isLoading} onClick={handleSubmit}>
-            Request a demo
+            {isLoading ? 'Submitting...' : 'Request a demo'}
           </Button>
         </div>
       </div>
