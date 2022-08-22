@@ -5,8 +5,8 @@ import { routes } from '../../router';
 import { useWindowDimensions } from '../../hooks';
 import { constants } from '../../constants';
 import CubeIcon from '../../assets/cube-icon.svg';
-import LensDesktop from '../../assets/Lens_Desktop.mov';
-import LensMobile from '../../assets/Lens_Mobile.mov';
+import LensDesktop from '../../assets/HS_Lens.mp4';
+import LensMobile from '../../assets/HS_Lens_Mobile.mp4';
 
 const data = [
   {
