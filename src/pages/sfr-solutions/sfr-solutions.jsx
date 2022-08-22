@@ -29,7 +29,7 @@ const SfrSolutions = () => {
             <FeaturesSection currentTab={currentTab} />
           </div>
           <p className='font-inter font-extralight text-2xl text-center px-24 pb-10 md:pb-0 hidden md:block'>
-            Haystacks plugs our clients into deep-rooted property management infrastructure at large fund pricing.
+            Haystacks.AI connects our clients to deep-rooted property management infrastructure at large fund pricing.
           </p>
         </div>
       </section>

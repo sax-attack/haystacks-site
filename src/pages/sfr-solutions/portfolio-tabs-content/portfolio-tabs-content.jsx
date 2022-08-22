@@ -60,12 +60,12 @@ const data = [
       },
       {
         heading: 'Simulate Hold/Sell',
-        text: 'Utilize Haystacks.ai yearly rent projections to understand when markets will appreciate/level off, and craft a strategy to maximize portfolio exits.',
+        text: 'Utilize Haystacks.AI yearly rent projections to understand when markets will appreciate/level off, and craft a strategy to maximize portfolio exits.',
         index: '04',
       },
       {
         heading: 'Execute Trades',
-        text: 'Eﬃciently execute portfolio trades with other institutions on our platform to take advantage of off-market portfolio opportunities.',
+        text: 'Efficiently execute portfolio trades with other institutions on our platform to take advantage of off-market portfolio opportunities.',
         index: '05',
       },
     ],

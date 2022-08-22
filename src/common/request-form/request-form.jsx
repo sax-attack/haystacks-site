@@ -20,7 +20,7 @@ const RequestForm = ({ className }) => {
   const [isLoading, setLoading] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState([]);
 
-  const solution1 = 'Lens: Predictive Market Insider';
+  const solution1 = 'Lens: Predictive Market Intelligence';
   const solution2 = 'SFR Portfolio Architect';
   const solution3 = 'SFR Portfolio Simulator';
 
