@@ -163,7 +163,7 @@ const RequestForm = ({ className }) => {
 
         <div className='mt-16 flex flex-row justify-center'>
           <Button type='submit' disabled={isLoading} onClick={handleSubmit}>
-            {isLoading ? 'Submitting...' : 'Request a demo'}
+            {isLoading ? 'SUBMITTING...' : 'REQUEST A DEMO'}
           </Button>
         </div>
       </div>

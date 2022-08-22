@@ -23,14 +23,17 @@ const data = [
     content: [
       {
         heading: 'Customize Assumptions',
+        index: '01',
         text: 'Apply your own financial strategy and efficiently price every micro-market to achieve target returns based on best-in-class rent predictions.',
       },
       {
         heading: 'Data-Driven Locations',
+        index: '02',
         text: 'Haystacks.AI unites traditional and alternative data layers to highlight data trends matching each custom data thesis.',
       },
       {
         heading: 'Deploy Efficiently',
+        index: '03',
         text: 'Acquire and maximize value through Haystacks.AI’s local offer & property management partnerships.',
       },
       // {
@@ -52,15 +55,18 @@ const data = [
       {
         heading: 'Deploy Efficiently',
         text: 'Acquire and maximize value through Haystacks.AI’s local offer & property management partnerships.',
-        isGrayedOut: true
+        isGrayedOut: true,
+        index: '03',
       },
       {
         heading: 'Simulate Hold/Sell',
         text: 'Utilize Haystacks.ai yearly rent projections to understand when markets will appreciate/level off, and craft a strategy to maximize portfolio exits.',
+        index: '04',
       },
       {
         heading: 'Execute Trades',
         text: 'Eﬃciently execute portfolio trades with other institutions on our platform to take advantage of off-market portfolio opportunities.',
+        index: '05',
       },
     ],
   },
@@ -89,11 +95,11 @@ export const PortfolioTabsContent = ({ currentTab }) => {
       <div className='flex flex-col items-center md:flex-row mt-24 mb-28'>
         {isBiggerSm ? (
           <Swiper navigation modules={[Navigation]} spaceBetween={32} slidesPerView={3}>
-            {data[currentTab].content.map((item, index) => (
+            {data[currentTab].content.map((item) => (
               <SwiperSlide key={item.heading} className='story-container'>
                 <Card key={item.heading} className='h-[430px]' style={item.isGrayedOut && { opacity: 0.5 }}>
-                  <p className='font-roboto font-light text-xl mb-7'>0{index + 1}</p>
-                  <Card.Heading className='font-roboto font-medium w-full mb-20'>{item.heading}</Card.Heading>
+                  <p className='font-roboto font-light text-xl mb-7'>{item.index}</p>
+                  <Card.Heading className='font-roboto font-medium w-full h-28'>{item.heading}</Card.Heading>
                   <Card.Text className='font-inter font-light'>{item.text}</Card.Text>
                 </Card>
               </SwiperSlide>
@@ -101,10 +107,10 @@ export const PortfolioTabsContent = ({ currentTab }) => {
           </Swiper>
         ) : (
           <>
-            {data[currentTab].content.map((item, index) => (
+            {data[currentTab].content.map((item) => (
               <div className='px-14'>
                 <h5 className='font-roboto text-center font-light text-lg mb-1'>
-                  0{index + 1} {item.heading}
+                  {item.index} {item.heading}
                 </h5>
                 <p className='font-extralight text-sm text-center mb-10'>{item.text}</p>
               </div>

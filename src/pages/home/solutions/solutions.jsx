@@ -7,7 +7,7 @@ import c from 'classnames'
 
 const data = [
   {
-    heading: 'LENS',
+    heading: 'Lens',
     subheading: 'Predictive Market Intelligence',
     text: 'Uncover critical, forward-looking trends in 95% of US Markets.',
   },
@@ -70,7 +70,7 @@ export const Solutions = () => {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-between items-center text-center md:text-left">
+        <div className="mb-12 flex justify-center md:justify-between items-center text-center md:text-left">
           <div className="flex flex-col mr-5 cursor-pointer">
             <button onClick={previousSlide} disabled={previousDisabled}>
               <img
