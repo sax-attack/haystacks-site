@@ -15,7 +15,7 @@ const data = [
 
 const NumbersSection = () => {
   return (
-    <div className='p-5 md:p-20'>
+    <div className='p-5 md:p-20 bg-sectionBg bg-no-repeat bg-cover'>
       <div className='flex flex-col md:flex-row justify-around items-center'>
         {data.map((item) => (
           <div key={item.num} className='flex flex-col items-center text-center max-w-[270px]'>

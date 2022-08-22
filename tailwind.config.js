@@ -10,6 +10,7 @@ module.exports = {
     },
     backgroundImage: {
       bg: "url('./assets/Background.png')",
+      sectionBg: "url('./assets/Section_Background.png')",
     },
     colors: {
       danger: '#E4003A',
