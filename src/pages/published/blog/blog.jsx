@@ -22,7 +22,7 @@ const posts = [
     date: 'March 24, 2022',
   },
   {
-    title: 'Haystacks.ai Raises Another $3M for its Single-Family Rental Real Estate Data Platform That Helps Investors Source, Acquire, and Manage Their Investments',
+    title: 'Haystacks.AI Raises Another $3M for its Single-Family Rental Real Estate Data Platform That Helps Investors Source, Acquire, and Manage Their Investments',
     date: 'March 24, 2022',
     link: 'https://www.alleywatch.com/2022/03/haystacks-ai-single-family-rental-residential-real-estate-data-platform-management-sourcing-sourav-goswami/'
   },

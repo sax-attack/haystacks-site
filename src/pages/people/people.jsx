@@ -37,7 +37,7 @@ const People = () => {
       <section className='container'>
          <div className="section">
          <h2 className='text-center md:text-left py-40 text-lg md:text-3xl max-w-4xl font-rubik'>
-            Haystacks is led by a team of real estate professionals and technologists determined to unlock value for professional
+            Haystacks.AI is led by a team of real estate professionals and technologists determined to unlock value for professional
             residential investors.
           </h2>
 
