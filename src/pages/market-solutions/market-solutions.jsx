@@ -29,13 +29,13 @@ const MarketSolutions = () => {
         <div className="container">
           <div className="flex flex-col items-center">
             <img src={CubeIcon} alt="cube" className="w-12 h-12 mb-12" />
-            <h1 className="font-rubik text-6xl text-center max-w-xl">Lens Predictive Market Intelligence</h1>
-            <p className="text-2xl font-light text-center mt-12">Utilizing our proprietary machine learning models, we run multitudes <br /> of regression analyses to surface data points predicting market change.</p>
+            <h1 className="font-rubik text-lg md:text-6xl text-center max-w-xl">Lens Predictive Market Intelligence</h1>
+            <p className="text-sm md:text-2xl font-light text-center mt-12">Utilizing our proprietary machine learning models, we run multitudes <br /> of regression analyses to surface data points predicting market change.</p>
           </div>
 
-          <div className="flex justify-between mt-24">
+          <div className="flex flex-col md:flex-row justify-between mt-24">
             {data.map((item) => (
-              <Card key={item.heading} subheading={item.subheading} text={item.text} className="w-2/6 mr-8">
+              <Card key={item.heading} subheading={item.subheading} text={item.text} className="w-full md:w-2/6 mb-8 md:mb-0 mr-8">
                 <Card.Heading>{item.heading}</Card.Heading>
                 <Card.Text className="mt-5">{item.text}</Card.Text>
               </Card>
