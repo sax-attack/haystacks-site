@@ -1,13 +1,10 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import { Card } from '../../../common';
 import { useWindowDimensions } from '../../../hooks';
 import { constants } from '../../../constants';
 import CubeIcon from '../../../assets/cube-icon.svg';
-import PortfolioArchitectDesktopVideo from '../../../assets/Architect_Desktop.mov';
-import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mov';
-import PortfolioSimulatorDesktopVideo from '../../../assets/Simulator_Desktop.mov';
-import PortfolioSimulatorMobileVideo from '../../../assets/Simulator_Mobile.mov';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -18,8 +15,22 @@ const data = [
     heading: 'Portfolio Architect',
     footer:
       'Select the market in the Buy Box with predefined location and property characteristics that meet your portfolio assumptions.',
-    desktopVideo: PortfolioArchitectDesktopVideo,
-    mobileVideo: PortfolioArchitectMobileVideo,
+    desktopVideo: (
+      <iframe
+        src='https://drive.google.com/file/d/16oEMbzmTGkcKQYLt0a1JLUfAjH_JrS2Q/preview'
+        width='100%'
+        height='480'
+        allow='autoplay'
+      ></iframe>
+    ),
+    mobileVideo: (
+      <iframe
+        src='https://drive.google.com/file/d/174wA9tw5wFmLW-43RVBN-gkrC6qy3jQB/preview'
+        width='100%'
+        height='480'
+        allow='autoplay'
+      ></iframe>
+    ),
     content: [
       {
         heading: 'Customize Assumptions',
@@ -46,8 +57,22 @@ const data = [
   {
     heading: 'Portfolio Simulator',
     footer: 'Simulate 1YR, 3YR and 5YR hold/sell strategies.',
-    desktopVideo: PortfolioSimulatorDesktopVideo,
-    mobileVideo: PortfolioSimulatorMobileVideo,
+    desktopVideo: (
+      <iframe
+        src='https://drive.google.com/file/d/16nieRMKgaH6I3mh-rZO5q0w-8cflmSbH/preview'
+        width='100%'
+        height='480'
+        allow='autoplay'
+      ></iframe>
+    ),
+    mobileVideo: (
+      <iframe
+        src='https://drive.google.com/file/d/178XcqtBQEij0yytWb_y0CyUm1s6l34-j/preview'
+        width='100%'
+        height='480'
+        allow='autoplay'
+      ></iframe>
+    ),
     content: [
       {
         heading: 'Deploy Efficiently',
@@ -117,14 +142,7 @@ export const PortfolioTabsContent = ({ currentTab }) => {
         <p className='text-sm md:text-2xl font-extralight'>{data[currentTab].footer}</p>
       </div>
 
-      <div>
-        <video
-          autoPlay
-          loop
-          type='video/mov'
-          src={isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}
-        ></video>
-      </div>
+      <div className='max-w-[1200px] mx-auto'>{isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}</div>
     </>
   );
 };
