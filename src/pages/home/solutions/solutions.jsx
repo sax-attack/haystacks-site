@@ -7,7 +7,7 @@ import c from 'classnames'
 
 const data = [
   {
-    heading: 'MI-95',
+    heading: 'LENS',
     subheading: 'Predictive Market Intelligence',
     text: 'Uncover critical, forward-looking trends in 95% of US Markets.',
   },
