@@ -25,7 +25,7 @@ export const people = [
     data: [
       {
         name: 'Sourav Goswami',
-        title: 'Sourav Goswami',
+        title: 'Founder',
         description:
           '4x Founder, RE PE fund manager, Buckingham Partners MD, former Walton Street MD, Goldman Sachs, Adj. Prof at NYU Schack Inst. for RE, nominated for Smithsonian Award, Harvard BA, Columbia MBA',
         image: Sourav,

@@ -38,7 +38,7 @@ const Header = () => {
   const [isBurgerMenuOpened, setIsBurgerMenuOpened] = useState(false);
   const { pathname } = useLocation();
 
-  const isBiggerSm = width > constants.breakpoints.sm;
+  const isBiggerSm = width > constants.breakpoints.md;
 
   useEffect(() => {
     setIsBurgerMenuOpened(false);

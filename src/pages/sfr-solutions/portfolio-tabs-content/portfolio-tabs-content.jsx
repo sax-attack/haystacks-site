@@ -1,10 +1,13 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import { Card } from '../../../common';
 import { useWindowDimensions } from '../../../hooks';
 import { constants } from '../../../constants';
 import CubeIcon from '../../../assets/cube-icon.svg';
+import PortfolioArchitectDesktopVideo from '../../../assets/Architect_Desktop2.mov';
+import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mov';
+import PortfolioSimulatorDesktopVideo from '../../../assets/Simulator_Desktop.mov';
+import PortfolioSimulatorMobileVideo from '../../../assets/Simulator_Mobile.mov';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -15,22 +18,8 @@ const data = [
     heading: 'Portfolio Architect',
     footer:
       'Select the market in the Buy Box with predefined location and property characteristics that meet your portfolio assumptions.',
-    desktopVideo: (
-      <iframe
-        src='https://drive.google.com/file/d/16oEMbzmTGkcKQYLt0a1JLUfAjH_JrS2Q/preview'
-        width='100%'
-        height='480'
-        allow='autoplay'
-      ></iframe>
-    ),
-    mobileVideo: (
-      <iframe
-        src='https://drive.google.com/file/d/174wA9tw5wFmLW-43RVBN-gkrC6qy3jQB/preview'
-        width='100%'
-        height='480'
-        allow='autoplay'
-      ></iframe>
-    ),
+    desktopVideo: PortfolioArchitectDesktopVideo,
+    mobileVideo: PortfolioArchitectMobileVideo,
     content: [
       {
         heading: 'Customize Assumptions',
@@ -57,22 +46,8 @@ const data = [
   {
     heading: 'Portfolio Simulator',
     footer: 'Simulate 1YR, 3YR and 5YR hold/sell strategies.',
-    desktopVideo: (
-      <iframe
-        src='https://drive.google.com/file/d/16nieRMKgaH6I3mh-rZO5q0w-8cflmSbH/preview'
-        width='100%'
-        height='480'
-        allow='autoplay'
-      ></iframe>
-    ),
-    mobileVideo: (
-      <iframe
-        src='https://drive.google.com/file/d/178XcqtBQEij0yytWb_y0CyUm1s6l34-j/preview'
-        width='100%'
-        height='480'
-        allow='autoplay'
-      ></iframe>
-    ),
+    desktopVideo: PortfolioSimulatorDesktopVideo,
+    mobileVideo: PortfolioSimulatorMobileVideo,
     content: [
       {
         heading: 'Deploy Efficiently',
@@ -112,7 +87,7 @@ export const PortfolioTabsContent = ({ currentTab }) => {
 
       <div className='flex flex-col items-center md:flex-row mt-24 mb-28'>
         {isBiggerSm ? (
-          <Swiper navigation modules={[Navigation]} spaceBetween={50} slidesPerView={3}>
+          <Swiper navigation modules={[Navigation]} spaceBetween={32} slidesPerView={3}>
             {data[currentTab].content.map((item, index) => (
               <SwiperSlide key={item.heading} className='story-container'>
                 <Card key={item.heading} className='h-[430px]'>
@@ -142,7 +117,14 @@ export const PortfolioTabsContent = ({ currentTab }) => {
         <p className='text-sm md:text-2xl font-extralight'>{data[currentTab].footer}</p>
       </div>
 
-      <div className='max-w-[1200px] mx-auto'>{isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}</div>
+      <div>
+        <video
+          autoPlay
+          loop
+          type='video/mov'
+          src={isBiggerSm ? data[currentTab].desktopVideo : data[currentTab].mobileVideo}
+        ></video>
+      </div>
     </>
   );
 };
