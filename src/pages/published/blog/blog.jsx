@@ -3,11 +3,6 @@ import { BlogPost } from '../../../common';
 
 const posts = [
   {
-    title: 'IT startup Electric reaches unicorn status and other NYC tech news',
-    date: 'March 30, 2022',
-    link: 'https://www.bizjournals.com/newyork/news/2022/03/30/it-startup-electric-and-other-nyc-tech-news.html'
-  },
-  {
     title: 'Future City: Smart home combo',
     date: 'March 29, 2022',
     link: 'https://therealdeal.com/2022/03/29/future-city-smart-home-combo/'
@@ -35,11 +30,6 @@ const posts = [
     title: 'Venture Capital Deals',
     link: 'https://www.axios.com/newsletters/axios-pro-rata/',
     date: 'August 20, 2022'
-  },
-  {
-    title: 'Katie Haun lands $1.5B for two crypto funds in historic raise for solo VC',
-    link: 'https://fortune.com/2022/03/23/katie-haun-lands-historic-raise-crypto-funds-solo-vc/',
-    date: 'March 23, 2022'
   },
   {
     title: 'Haystacks.AI Raises Additional $3M in Seed Funding',

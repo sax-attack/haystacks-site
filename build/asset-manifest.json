@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.b0931950.css",
-    "main.js": "/static/js/main.5f5f49aa.js",
-    "static/media/HS_Hero.mov": "/static/media/HS_Hero.d07af7512fa8239251e4.mov",
+    "main.js": "/static/js/main.d011427e.js",
     "static/media/Simulator_Mobile.mp4": "/static/media/Simulator_Mobile.dd341da26794081ee77f.mp4",
     "static/media/HS_Simulator.mp4": "/static/media/HS_Simulator.403fd23f2e88720543aa.mp4",
-    "static/media/HS_Architect.mp4": "/static/media/HS_Architect.ebb1b6b2efa7fa7a8d62.mp4",
+    "static/media/Landing.mp4": "/static/media/Landing.649b81c9add5480d53e1.mp4",
+    "static/media/HS_Architect.mp4": "/static/media/HS_Architect.2ed80d37058d5ad695cb.mp4",
     "static/media/HS_Lens.mp4": "/static/media/HS_Lens.181bcee1aa976156ee0b.mp4",
-    "static/media/Architect_Mobile.mp4": "/static/media/Architect_Mobile.e1b2d9cdf66aa4fb1d00.mp4",
+    "static/media/Architect_Mobile.mov": "/static/media/Architect_Mobile.386090a150d6888f4643.mov",
     "static/media/HS_Lens_Mobile.mp4": "/static/media/HS_Lens_Mobile.fe99543398003498ed1d.mp4",
     "static/media/cube-icon.svg": "/static/media/cube-icon.5270b8a0b0fbfc6826afad4ff51b3bfe.svg",
     "static/media/Section_Background.png": "/static/media/Section_Background.8ebbbd53801e612ebf5d.png",
@@ -17,12 +17,12 @@
     "static/media/Adam.png": "/static/media/Adam.a3ce2e383c7ebc708151.png",
     "static/media/Paul.png": "/static/media/Paul.5b68c77b41f896457b2c.png",
     "static/media/Joe.png": "/static/media/Joe.c7985e7bedec4a3917ec.png",
+    "static/media/Sourav.png": "/static/media/Sourav.ca39c39b171a4594a93b.png",
     "static/media/Pulkit.png": "/static/media/Pulkit.0625f2c632d4cf887551.png",
     "static/media/Joanna.png": "/static/media/Joanna.29ebaeb45cb58ad43ca7.png",
     "static/media/Tim.png": "/static/media/Tim.4c26202f41a738777572.png",
     "static/media/Michael.png": "/static/media/Michael.245e284d3e2781078bda.png",
     "static/media/Tom.png": "/static/media/Tom.a3afb6dc6b12b6c894c5.png",
-    "static/media/Sourav.png": "/static/media/Sourav.a7308e81460ef0646ecd.png",
     "static/media/Prashant.png": "/static/media/Prashant.f6ef7885051aac852f0a.png",
     "static/media/Ron.png": "/static/media/Ron.a233d6e820ffbed9fa1c.png",
     "static/media/Joselyn.png": "/static/media/Joselyn.6b1265bb89ebf1900c11.png",
@@ -39,10 +39,10 @@
     "static/media/arrow-up.svg": "/static/media/arrow-up.661e3f45a85053e8f637c018285a3fe8.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.f2e7db95a7cde2eaec68837a3b539c38.svg",
     "main.b0931950.css.map": "/static/css/main.b0931950.css.map",
-    "main.5f5f49aa.js.map": "/static/js/main.5f5f49aa.js.map"
+    "main.d011427e.js.map": "/static/js/main.d011427e.js.map"
   },
   "entrypoints": [
     "static/css/main.b0931950.css",
-    "static/js/main.5f5f49aa.js"
+    "static/js/main.d011427e.js"
   ]
 }

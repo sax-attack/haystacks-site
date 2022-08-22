@@ -5,7 +5,7 @@ import { useWindowDimensions } from '../../../hooks';
 import { constants } from '../../../constants';
 import CubeIcon from '../../../assets/cube-icon.svg';
 import PortfolioArchitectDesktopVideo from '../../../assets/HS_Architect.mp4';
-import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mp4';
+import PortfolioArchitectMobileVideo from '../../../assets/Architect_Mobile.mov';
 import PortfolioSimulatorDesktopVideo from '../../../assets/HS_Simulator.mp4';
 import PortfolioSimulatorMobileVideo from '../../../assets/Simulator_Mobile.mp4';
 
