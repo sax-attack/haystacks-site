@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '../link';
 import { routes } from '../../router';
-import Logo from '../../assets/logo-mock.png';
+import Logo from '../../assets/h-logo-dark.svg';
 
 const ProductLogo = () => (
   <Link to={routes.home.url} className=''>

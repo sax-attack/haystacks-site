@@ -4,11 +4,11 @@ import { Link, NavLink } from '../link';
 import { routes } from '../../router/routes';
 import { useWindowDimensions } from '../../hooks';
 import { constants } from '../../constants';
-import Logo from '../../assets/logo-mock.png';
+import Logo from '../../assets/h-logo.svg';
 import BurgerMenuIcon from '../../assets/burger-menu-icon.svg';
 import CloseIcon from '../../assets/close-icon.svg';
 
-const logo = <img src={Logo} alt='Haystacks logo' />;
+const logo = <img src={Logo} className="mt-3" alt='Haystacks logo' />;
 
 const Links = ({ isBiggerSm }) => {
   const className = isBiggerSm ? 'p-5' : 'text-2xl py-10 mx-12 border-border-gray500 border-y-[0.5px] font-extralight';
