@@ -36,13 +36,6 @@ const CardsSection = () => {
             </Card>
           ))}
         </div>
-        <div className='flex flex-col justify-center items-center pt-20 md:pt-48 pb-16 md:pb-64 px-8 md:px-20 text-center md:bg-transparent bg-background-gray200 '>
-          <p className='text-lg md:text-4xl mb-4'>Real estate is a $35T market with glaring inefficiencies.</p>
-          <p className='font-extralight text-sm md:text-2xl max-w-[900px]'>
-            The industry relies on historical metrics, when it should focus on metric forecasts over the future lifespan of the
-            investment.
-          </p>
-        </div>
       </div>
     </div>
   );
