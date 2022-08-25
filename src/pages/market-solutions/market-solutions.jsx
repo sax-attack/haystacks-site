@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Card, RequestForm } from '../../common';
 import { routes } from '../../router';
-import { useWindowDimensions } from '../../hooks';
+import { useWindowDimensions, useIsInViewport } from '../../hooks';
 import { constants } from '../../constants';
 import CubeIcon from '../../assets/cube-icon.svg';
 import LensDesktop from '../../assets/HS_Lens.mp4';
@@ -27,6 +27,16 @@ const MarketSolutions = () => {
   useEffect(() => {
     document.title = routes.market.title;
   }, []);
+
+  const ref = useRef();
+
+  const isInViewport = useIsInViewport(ref);
+
+  useEffect(() => {
+    if (isInViewport) {
+      document.getElementById('vid').play();
+    }
+  }, [isInViewport]);
 
   const { width } = useWindowDimensions();
 
@@ -53,40 +63,23 @@ const MarketSolutions = () => {
         </p>
       </div>
 
-      <div className='max-w-[1200px] mx-auto'>
+      <div className='max-w-[1200px] mx-auto' ref={ref}>
         {isBiggerSm ? (
-          <video
-            autoPlay
-            src={LensDesktop}
-            loop
-            width='100%'
-            height='480'
-          ></video>
+          <video autoPlay src={LensDesktop} loop width='100%' height='480' id='vid'></video>
         ) : (
-          <video
-            autoPlay
-            src={LensMobile}
-            loop
-            width='100%'
-            height='480'
-          ></video>
+          <video autoPlays src={LensMobile} loop width='100%' height='480' id='vid'></video>
         )}
       </div>
 
-      <div className="container">
+      <div className='container'>
         <div className='flex flex-col md:flex-row justify-between mt-24'>
-            {data.map((item) => (
-              <Card
-                key={item.heading}
-                subheading={item.subheading}
-                text={item.text}
-                className='w-full md:w-2/6 mb-8 md:mb-0 mr-8'
-              >
-                <Card.Heading>{item.heading}</Card.Heading>
-                <Card.Text className='mt-5'>{item.text}</Card.Text>
-              </Card>
-            ))}
-          </div>
+          {data.map((item) => (
+            <Card key={item.heading} subheading={item.subheading} text={item.text} className='w-full md:w-2/6 mb-8 md:mb-0 mr-8'>
+              <Card.Heading>{item.heading}</Card.Heading>
+              <Card.Text className='mt-5'>{item.text}</Card.Text>
+            </Card>
+          ))}
+        </div>
       </div>
 
       <RequestForm />
